@@ -1,11 +1,11 @@
 /*** Navigation ***/
 
 .navbar {
-	background-color: #d3bbad;
+	background-color: white;
 }
 
 #nav-links li a {
-	color: white;
+	color: black;
 	font-size: 1.2em;
 }
 
@@ -13,13 +13,17 @@
 	background-color: grey;
 }	
 
+.navbar-inverse {
+	border-radius: 0;
+}
+
 #nav-links>li>a:hover {
     text-decoration: none;
     color: black;
 }
 
 .projectName a {
-	color: white;
+	color: black;
 	font-size: 1.2em;
 }
 
@@ -29,23 +33,66 @@
 
 /*** Body ***/
 
+.page-header {
+	background-image: url(../img/Typewriter.jpg);
+	height: 90vh;
+	overflow: hidden;
+	background-size: cover;
+	opacity: 0.55;
+	background-position: center;
+	background-attachment: fixed;
+	background-color: white;
+			padding: 25px;
+			margin: 30px;
+}
+
+.page-header .brand h1 {
+	text-align: center;
+	color: white;
+	font-size: 4.2em;
+	font-weight: 300;
+	display: inline-block;
+	position: relative;
+	padding-top: 150px;
+	padding-left: 50px;
+	font-size: 3.5em;
+	text-shadow: 1.2px 1.2px 5px black;
+	font-style: italic;
+	z-index: 1;
+}
+
+.page-header .brand h4 {
+	text-align: center;
+	color: white;
+	font-size: 2.8em;
+	font-weight: 300;
+	font-style: italic;
+	display: inline-block;
+	position: relative;
+	padding-top: 20px;
+	text-shadow: 1.2px 1.2px 5px black;
+	z-index: 1;
+}
+
 body {
 	background-color: white;
-	padding-top: 50px;
-	padding-bottom: 50px;
 	text-rendering: optimizeLegibility;
 	line-height: 1.42em;
 }
 
 /*** SERVICES PAGE ***/
 
-#services h1 {
+#portfolio h1 {
 	color: #333333;
+	font-size: 5em;
+	text-align: center;
+	padding-bottom: 40px;
 }
 
-#portfolio p {
+#work p {
 	color: #666666;
 	padding-top: 20px;
+	padding-bottom: 50px;
 	font-size: 1.2em;
 	font-style: Amiko, sans-serif;
 }
@@ -60,7 +107,44 @@ img {
 	height: auto;
 }
 
-/*** Carousel ***/
+/**
+.work-img {
+	display: block;
+	margin: auto;
+	max-width: 200px;
+	position: relative;
+}
+
+.info {
+	position: absolute;
+	top: 15%;
+	left: 22%;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #fff;
+	display: none;
+}
+
+.proj-title {
+	font-weight: 100;
+}
+
+/*** Main Raised ***/
+
+.main-raised {
+	margin: -60px 30px 0 30px;
+	padding: 0 15px 0 15px;
+	box-shadow: 0 16px 24px 2px grey;
+	border-radius: 6px;
+}
+
+.main {
+	background: #FFF;
+	position: relative;
+	z-index: 3;
+}
+
+/*** Carousel ***
 
 .carousel {
 	margin-left: -15px;
@@ -86,48 +170,19 @@ img {
 }
 
 img {
-	background: -webkit-linear-gradient(top, rgba(0,0,0,0.08), rgba(238,238,238,1)); /* For Safari 5.1 to 6.0 */
-	background: -o-linear-gradient(bottom, rgba(0,0,0,0.08), rgba(238,238,238,1)); /* For Opera 11.1 to 12.0 */
-	background: -moz-linear-gradient(bottom, rgba(0,0,0,0.08), rgba(238,238,238,1)); /* For Firefox 3.6 to 15 */
-	background: linear-gradient(to bottom, rgba(0,0,0,0.08), rgba(238,238,238,1)); /* Standard syntax (must be last) */
+	background: -webkit-linear-gradient(top, rgba(0,0,0,0.08), rgba(238,238,238,1)); /* For Safari 5.1 to 6.0 *
+	background: -o-linear-gradient(bottom, rgba(0,0,0,0.08), rgba(238,238,238,1)); /* For Opera 11.1 to 12.0 *
+	background: -moz-linear-gradient(bottom, rgba(0,0,0,0.08), rgba(238,238,238,1)); /* For Firefox 3.6 to 15 *
+	background: linear-gradient(to bottom, rgba(0,0,0,0.08), rgba(238,238,238,1)); /* Standard syntax (must be last) *
  }
-
-/*** Portfolio Page ***/
-
-#portfolio {
-	padding-top: 30px;
-	padding-bottom: 30px;
-}
-
-#portfolio-header {
-	padding-bottom: 20px;
-}
-
-.work-img {
-	display: block;
-	margin: auto;
-	max-width: 200px;
-	position: relative;
-}
-
-.info {
-	position: absolute;
-	top: 15%;
-	left: 22%;
-	text-transform: uppercase;
-	font-weight: 700;
-	color: #fff;
-	display: none;
-}
-
-.proj-title {
-	font-weight: 100;
-}
 
 /*** About Page ***/
 
-#about-header {
+#about-header h1 {
 	color: #333333;
+	font-size: 5em;
+	text-align: center;
+	padding-bottom: 40px;
 }
 
 #main-text {
@@ -135,100 +190,36 @@ img {
 	font-size: 1.3em; 
 	-webkit-margin-before: 0;
 	line-height: 1.5em;
-	text-align: left;
-	max-width: 900px;
+	text-align: center;
 	color: #666666;
 }
 
-#profile {
+#profile img {
+	display: block;
+	margin: auto;
 	padding-top: 30px;
-	padding-bottom: 30px;
+	padding-bottom: 60px;
 }
 
 .skills h2 {
-	text-align: left;
+	text-align: center;
 	text-transform: uppercase;
 	font-family: 'Amiko', sans-serif;
 	color: #333333;
-	max-width: 900px;
 	width: 100%;
+}
+
+.skills-column {
+	text-align: center;
 }
 
 #skills-list {
-	text-align: left;
+	text-align: center;
 	font-size: 1.2em;
 	line-height: 1.6em;
-	max-width: 900px;
 	color: #666666;
 	-webkit-padding-start: 0px;
-	margin-bottom: 30px;
-}
-
-/*** Contact Page ***/
-  #map {
-    height: 200px;
-    width: 100%;
-  }
-  
-  html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-  }
-
-#contact h1 {
-	padding-top: 30px;
-	color: white;
-}
-
-#contact p a {
-	text-decoration: none;
-	font-size: 1.5em;
-	color: white;
-}
-
-#contact a:hover {
-	color: #8fbcbc;
-}
-
-#contact p span {
-	padding-right: 5px;
-	font-size: 1.5em;
-	color: white;
-}
-
-#contact {
-	background-image: url("../img/color.jpg");
-	background-position: center;
-	background-attachment: fixed;
-	background-size: cover;
-	padding: 50px;
-	padding-top: 50px;
-	opacity: 0.65;
-}
-
-#contact-info {
-	margin-right: 30px;
-	margin-left: 30px;
-	padding-right: 10px;
-	padding-left: 10px;
-}
-
-#label {
-	color: white;
-}
-
-.form-control {
-	width: 100%;
-}
-
-.form-group {
-	padding-bottom: 10px;
-	margin-bottom: 10px;
-}
-
-.button {
-	margin-bottom: 40px;
+	padding-bottom: 60px;
 }
 
 /*** FAQ PAGE ***/
@@ -254,7 +245,7 @@ img {
 }
 
 .panel-default>.panel-heading {
-	background-color: #d3bbad;
+	background-color: lightgrey;
 }
 
 .panel-body {
@@ -262,6 +253,10 @@ img {
 	font-size: 1.5em;
 	line-height: 1.1;
 	}
+
+.panel-group {
+	margin-bottom: 70px;
+}
 
 .learn-more {
 	float: left;
@@ -284,7 +279,50 @@ img {
 
 footer {
 	margin-top: 50px;
-	margin-bottom: 5px;
+	background-color: lightgrey;
+	color: black;
+}
+
+#contact a {
+	text-decoration: none;
+	font-size: 1.8em;
+	padding-left: 10px;
+	color: black;
+}
+
+#contact a:hover {
+	color: #8fbcbc;
+}
+
+#contact p span {
+	font-size: 1.8em;
+}
+
+#contact {
+	padding-left: 60px;
+	padding-top: 60px;
+}
+
+#label {
+	color: black;
+}
+
+.form-control {
+	width: 80%;
+}
+
+.form-group {
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+
+.button {
+	margin-bottom: 40px;
+}
+
+.content {
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 .footer a:active {
@@ -295,21 +333,7 @@ footer {
 	color: red;
 }
 
-.youtube {
-	padding-top: 25px;
-	padding-bottom: 10px;
-}
-
-.twitter {
-	float: right;
-	padding-right: 5px;
-}
-
-.fb-like {
-	float: right;
-	padding-right: 5px;
-}
-
 .copyright {
 	float: left;
+	padding-bottom: 50px;
 }
