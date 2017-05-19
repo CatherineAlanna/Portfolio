@@ -1,0 +1,315 @@
+/*** Navigation ***/
+
+.navbar {
+	background-color: #d3bbad;
+}
+
+#nav-links li a {
+	color: white;
+	font-size: 1.2em;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+	background-color: grey;
+}	
+
+#nav-links>li>a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.projectName a {
+	color: white;
+	font-size: 1.2em;
+}
+
+.anchor {
+	padding-top: 51px;
+}
+
+/*** Body ***/
+
+body {
+	background-color: white;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	text-rendering: optimizeLegibility;
+	line-height: 1.42em;
+}
+
+/*** SERVICES PAGE ***/
+
+#services h1 {
+	color: #333333;
+}
+
+#portfolio p {
+	color: #666666;
+	padding-top: 20px;
+	font-size: 1.2em;
+	font-style: Amiko, sans-serif;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.col-md-4 img {
+	width: 60%;
+	height: auto;
+}
+
+/*** Carousel ***/
+
+.carousel {
+	margin-left: -15px;
+	margin-right: -15px;
+}
+
+.carousel-inner img {
+	opacity: 0.65;
+}
+
+.carousel-caption h3 {
+	font-size: 3.5em;
+	color: black;
+	text-shadow: 1.2px 1.2px 5px white;
+	z-index: 1;
+}
+
+.carousel-caption p {
+	font-size: 1.5em;
+	color: black;
+	text-shadow: 1.2px 1.2px 5px white;
+	z-index: 1;
+}
+
+img {
+	background: -webkit-linear-gradient(top, rgba(0,0,0,0.08), rgba(238,238,238,1)); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(bottom, rgba(0,0,0,0.08), rgba(238,238,238,1)); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(bottom, rgba(0,0,0,0.08), rgba(238,238,238,1)); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to bottom, rgba(0,0,0,0.08), rgba(238,238,238,1)); /* Standard syntax (must be last) */
+ }
+
+/*** Portfolio Page ***/
+
+#portfolio {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+#portfolio-header {
+	padding-bottom: 20px;
+}
+
+.work-img {
+	display: block;
+	margin: auto;
+	max-width: 200px;
+	position: relative;
+}
+
+.info {
+	position: absolute;
+	top: 15%;
+	left: 22%;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #fff;
+	display: none;
+}
+
+.proj-title {
+	font-weight: 100;
+}
+
+/*** About Page ***/
+
+#about-header {
+	color: #333333;
+}
+
+#main-text {
+	font-family: sans-serif;
+	font-size: 1.3em; 
+	-webkit-margin-before: 0;
+	line-height: 1.5em;
+	text-align: left;
+	max-width: 900px;
+	color: #666666;
+}
+
+#profile {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.skills h2 {
+	text-align: left;
+	text-transform: uppercase;
+	font-family: 'Amiko', sans-serif;
+	color: #333333;
+	max-width: 900px;
+	width: 100%;
+}
+
+#skills-list {
+	text-align: left;
+	font-size: 1.2em;
+	line-height: 1.6em;
+	max-width: 900px;
+	color: #666666;
+	-webkit-padding-start: 0px;
+	margin-bottom: 30px;
+}
+
+/*** Contact Page ***/
+  #map {
+    height: 200px;
+    width: 100%;
+  }
+  
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+#contact h1 {
+	padding-top: 30px;
+	color: white;
+}
+
+#contact p a {
+	text-decoration: none;
+	font-size: 1.5em;
+	color: white;
+}
+
+#contact a:hover {
+	color: #8fbcbc;
+}
+
+#contact p span {
+	padding-right: 5px;
+	font-size: 1.5em;
+	color: white;
+}
+
+#contact {
+	background-image: url("../img/color.jpg");
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+	padding: 50px;
+	padding-top: 50px;
+	opacity: 0.65;
+}
+
+#contact-info {
+	margin-right: 30px;
+	margin-left: 30px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+#label {
+	color: white;
+}
+
+.form-control {
+	width: 100%;
+}
+
+.form-group {
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+
+.button {
+	margin-bottom: 40px;
+}
+
+/*** FAQ PAGE ***/
+
+#faq a {
+	text-decoration: none;
+	color: #333333;
+	padding-left: 5px;
+	font-size: 1.5em;
+}
+
+#faq h2 {
+	color: #333333;
+}
+
+.panel-body {
+	font-size: 1.5em;
+	color: #666666;
+}
+
+#faq a:hover {
+	color: white;
+}
+
+.panel-default>.panel-heading {
+	background-color: #d3bbad;
+}
+
+.panel-body {
+	font-family: 'Amiko', sans-serif;
+	font-size: 1.5em;
+	line-height: 1.1;
+	}
+
+.learn-more {
+	float: left;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.modal-button {
+	float: right;
+	padding: 15px;
+}
+
+#modalembed {
+	height: 500px;
+	width: 100%;
+	padding: 10px;
+}
+
+/*** Footer ***/
+
+footer {
+	margin-top: 50px;
+	margin-bottom: 5px;
+}
+
+.footer a:active {
+	color: black;
+}
+
+.footer a:visited {
+	color: red;
+}
+
+.youtube {
+	padding-top: 25px;
+	padding-bottom: 10px;
+}
+
+.twitter {
+	float: right;
+	padding-right: 5px;
+}
+
+.fb-like {
+	float: right;
+	padding-right: 5px;
+}
+
+.copyright {
+	float: left;
+}
